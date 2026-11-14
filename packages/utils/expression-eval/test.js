@@ -44,6 +44,7 @@ const fixtures = [
   {expr: '10%6',        expected: 4},
   {expr: '"a"+"b"',     expected: 'ab'},
   {expr: 'one + three', expected: 4},
+  {expr: expr.parse('one + two'), expected: 3},
 
   // call expression
   {expr: 'func(5)',   expected: 6},
